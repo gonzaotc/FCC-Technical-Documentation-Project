@@ -1,0 +1,68 @@
+body {
+
+}
+
+.sidebar-container{
+    min-height: 100vh;
+    width: 27.5rem;
+    background-color: #212529;
+}
+
+#navbar{
+
+}
+
+.nav-link{
+  transition: 0.3s;
+}
+
+.nav-link:hover{
+    position:relative;
+    transform: translateX(2rem);
+}
+
+#main-doc{
+   margin: 8rem;
+   margin-top: 0;
+}
+
+.main-section{
+
+}
+
+header {
+    color: rgba(200,100,0,1);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+p,.callout{
+    line-height: 1.6rem;
+    margin: 0;
+}
+
+.callout {
+    background-color: rgba(255,255,0,0.5);
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+code {
+    display:block;
+    background-color: rgba(255,100,1,0.3);
+    border: 2px solid rgba(0,0,0,0.05);
+    border-radius: 2px;
+    padding: 15px 10px;
+    margin: 1rem 0;
+}
+
+pre {
+    color: black;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+
