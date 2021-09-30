@@ -502,11 +502,13 @@ checkPermission(..) // checks a permission, returns true/false
 
                 A few examples of breaking this rule:<br>
 
-                getAge – would be bad if it shows an alert with the age (should only get).<br>
-                createForm – would be bad if it modifies the document, adding a form to it (should only create it and
-                return).<br>
-                checkPermission – would be bad if it displays the access granted/denied message (should only perform the
-                check and return the result).<br>
+                <ul>
+                <li>getAge – would be bad if it shows an alert with the age (should only get).</li>
+                <li>createForm – would be bad if it modifies the document, adding a form to it (should only create it and
+                return).</li>
+                <li>checkPermission – would be bad if it displays the access granted/denied message (should only perform the
+                check and return the result).</li>
+              </ul>
 
                 These examples assume common meanings of prefixes. You and your team are free to agree on other
                 meanings, but usually they’re not much different. In any case, you should have a firm understanding of
