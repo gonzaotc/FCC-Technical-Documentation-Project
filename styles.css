@@ -13,7 +13,7 @@ body {
  }
 
 .container__sidebar{
-    min-height: 100vh;
+    height: 100%;
     position: fixed;
     width: var(--sidebar__width);
     background-color: #212529;
@@ -25,12 +25,11 @@ font-size: 1.8rem;
 }
 
 .nav-link{
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-link:hover{
     transform: translateX(2.4rem) scale(1.2);
-    /* text-shadow: 0.5px 0.5px 10px rgba(255,100,0,5); */
 }
 
 .main-section{
@@ -85,15 +84,12 @@ pre {
     }
     .container__sidebar{
         display: flex;
-        /* border: 2px solid purple; */
         overflow: auto;
-        top:0;
-        bottom:0;
-
+        /* top:0;
+        bottom:0; */
     }
 
     #navbar{
-        /* border: 2px solid red; */
         width: 100%;
     }
 }
