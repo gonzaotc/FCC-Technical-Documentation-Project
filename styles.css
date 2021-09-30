@@ -86,6 +86,9 @@ pre {
     .container__sidebar{
         display: flex;
         /* border: 2px solid purple; */
+        overflow: auto;
+        top:0;
+        bottom:0;
 
     }
 
@@ -93,6 +96,7 @@ pre {
         /* border: 2px solid red; */
         width: 100%;
     }
+}
 
 @media(min-width: 1200px){
     #main-doc{
