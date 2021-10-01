@@ -1,42 +1,32 @@
 :root {
-    --sidebar__width: 16rem;
-    --footer__height: 10rem;
+    --color_dark: #212529;
+    --sidebar_width: 16rem;
+    --footer_height: 10rem;
 }
 
 body {
     display: grid;
-    grid-template-rows: auto var(--footer__height);
+    grid-template-rows: auto var(--footer_height);
+    grid-template-areas: "main"
+                         "footer";
 }
 
 #main-doc{
     max-width: 90vw;
-    margin-top: 0;
+    margin: 2rem 0 5rem 0;
     justify-self: center;
-    padding-bottom: 10rem;
-    padding-top: 2arem;
+    grid-area: main;
  }
 
 .container__sidebar{
-    height: 100%;
-    position: fixed;
-    width: var(--sidebar__width);
-    background-color: #212529;
     display: none;
-    border-right: 2px solid black;
 }
 
-#navbar__title{
-font-size: 1.8rem;
-}
-
-.nav-link{
-  transition: 0.3s ease-in-out;
-  padding-left: 100rem;
-}
-
-.nav-link:hover{
-    transform: translateX(2.4rem) scale(1.2);
-}
+ footer{
+    background-color: var(--color_dark);
+    grid-area: footer;
+    color: white;
+ }
 
 header {
     color: rgba(200,100,0,1);
@@ -77,23 +67,57 @@ pre {
 @media(min-width: 850px){
 
     body {
-        grid-template-columns: var(--sidebar__width) auto;
+        grid-template-columns: var(--sidebar_width) auto;
+        grid-template-rows: auto var(--footer_height);
+        grid-template-areas: "sidebar main"
+                             "sidebar footer";
     }
 
     #main-doc{
         max-width: 60vw;
         grid-column-start: 2;
     }
+
+    .navbar__wrapper{
+        grid-area: sidebar;
+    }
+
     .container__sidebar{
+        box-sizing: border-box;
         display: flex;
+        position: fixed;
+        width: var(--sidebar_width);
+        background-color: var(--color_dark);
+        border-right: 2px solid black;
+        /* border: 2px solid yellow; */
+        top:0;
+        bottom:0; 
         overflow: auto;
-        /* top:0;
-        bottom:0; */
+        height: 100%;
     }
 
     #navbar{
-        width: 100%;
+
     }
+    
+    #navbar__title{
+    font-size: 1.8rem;
+    }
+    
+    .nav-link, #footer-link{
+      transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover, #footer-link:hover{
+        transform: translateX(2.4rem) scale(1.2);
+    }
+
+    #footer-link {
+        color: red;
+        border: 2px solid purple;
+        margin-bottom: 50px;
+    }
+
 }
 
 @media(min-width: 1200px){
