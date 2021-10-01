@@ -1,9 +1,11 @@
 :root {
     --sidebar__width: 16rem;
+    --footer__height: 10rem;
 }
 
 body {
     display: grid;
+    grid-template-rows: auto var(--footer__height);
 }
 
 #main-doc{
@@ -11,7 +13,7 @@ body {
     margin-top: 0;
     justify-self: center;
     padding-bottom: 10rem;
-    padding-top: 2rem;
+    padding-top: 2arem;
  }
 
 .container__sidebar{

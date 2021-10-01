@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <title>Technical Documentation Page</title>
 </head>
@@ -36,7 +37,7 @@
 
     <main id="main-doc">
         <section class="main-section" id="Functions">
-            <header>Functions</header>
+            <header></i>Functions</header>
             <p>Quite often we need to perform a similar action in many places of the script.<br>
 
                 For example, we need to show a nice-looking message when a visitor logs in, logs out and maybe somewhere
@@ -179,7 +180,7 @@ Global variables
 </pre>
             </code>
             <span class="callout d-block">
-                Global variables<br>
+              <i class="bi bi-info-circle-fill text-primary lead"></i><strong>&nbsp;&nbsp;Global variables</strong><br>
 
                 Variables declared outside of any function, such as the outer userName in the code above, are called
                 global.<br>
@@ -289,7 +290,7 @@ function showMessage(from, text = anotherFunction()) {
             </code>
             <span class="callout d-block">
 
-                Evaluation of default parameters<br>
+              <i class="bi bi-info-circle-fill text-primary lead"></i><strong>&nbsp;&nbsp;Evaluation of default parameters</strong><br>
 
                 In JavaScript, a default parameter is evaluated every time the function is called without the respective
                 parameter.<br>
@@ -406,7 +407,7 @@ function showMovie(age) {
             </code>
             <p>In the code above, if checkAge(age) returns false, then showMovie won’t proceed to the alert.</p>
             <span class="callout d-block">
-                A function with an empty return or without it returns undefined
+              <i class="bi bi-info-circle-fill text-primary lead"></i><strong>&nbsp;&nbsp;A function with an empty return or without it returns undefined</strong><br>
 
                 If a function does not return a value, it is the same as if it returns undefined:
                 <code>
@@ -430,7 +431,7 @@ alert( doNothing() === undefined ); // true
             </span>
 
             <span class="callout d-block">
-                Never add a newline between return and the value
+              <i class="bi bi-exclamation-triangle-fill text-warning lead"></i></i><strong>&nbsp;&nbsp;Never add a newline between return and the value</strong><br>
 
                 For a long expression in return, it might be tempting to put it on a separate line, like this:
                 <code>
@@ -493,12 +494,12 @@ checkPermission(..) // checks a permission, returns true/false
 
             <span class="callout d-block">
 
-                One function – one action<br>
+              <i class="bi bi-info-circle-fill text-primary lead"></i><strong>&nbsp;&nbsp;One function – one action</strong><br>
 
                 A function should do exactly what is suggested by its name, no more.<br>
 
                 Two independent actions usually deserve two functions, even if they are usually called together (in that
-                case we can make a 3rd function that calls those two).<br>
+                case we can make a 3rd function that calls those two).<br>  
 
                 A few examples of breaking this rule:<br>
 
@@ -517,7 +518,7 @@ checkPermission(..) // checks a permission, returns true/false
             </span>
             <span class="callout d-block">
 
-                Ultrashort function names<br>
+              <i class="bi bi-info-circle-fill text-primary lead"></i><strong>&nbsp;&nbsp;Ultrashort function names</strong><br>
 
                 Functions that are used very often sometimes have ultrashort names.<br>
 
